@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Page pour convertir les distances (Km et Miles) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Titre simple -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertisseur de Distance"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Groupe de boutons radio -->
+    <RadioGroup
+        android:id="@+id/rgDist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="15dp">
+
+        <RadioButton
+            android:id="@+id/rbKmToMiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Km vers Miles"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbMilesToKm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miles vers Km"
+            android:layout_marginStart="20dp"/>
+    </RadioGroup>
+
+    <!-- Zone pour entrer la distance -->
+    <EditText
+        android:id="@+id/etDistInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez votre distance ici..."
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- Bouton de conversion -->
+    <Button
+        android:id="@+id/btnConvertDist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convertir maintenant"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"/>
+
+    <!-- Résultat final -->
+    <TextView
+        android:id="@+id/tvDistResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Résultat : -"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

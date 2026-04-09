@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Page pour convertir la température -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Titre de la page -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertisseur de Température"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Choix du type de conversion -->
+    <RadioGroup
+        android:id="@+id/rgTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="15dp">
+
+        <RadioButton
+            android:id="@+id/rbCtoF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celsius vers Fahr"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbFtoC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fahr vers Celsius"
+            android:layout_marginStart="20dp"/>
+    </RadioGroup>
+
+    <!-- Zone de saisie du chiffre -->
+    <EditText
+        android:id="@+id/etTempInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tapez votre chiffre ici..."
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- Bouton pour lancer le calcul -->
+    <Button
+        android:id="@+id/btnConvertTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculer le résultat"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"/>
+
+    <!-- Zone d'affichage du résultat -->
+    <TextView
+        android:id="@+id/tvTempResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Résultat : -"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
