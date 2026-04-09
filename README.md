@@ -13,21 +13,14 @@ Ce projet est le cinquième laboratoire pratique du module de développement mob
 ## Fonctionnalités
 L'application propose une interface interactive avec les éléments suivants :
 
-Navigation entre les Sections : Deux onglets permettent de basculer entre la conversion de température et la conversion de distance.
-
-Convertisseur de Température : Une interface permet de convertir des valeurs entre Celsius et Fahrenheit.
-
-Convertisseur de Distance : Une interface permet de convertir des valeurs entre kilomètres et miles.
-
-Choix du Sens de Conversion : Des boutons radio permettent de sélectionner le type de conversion souhaité.
-
-Saisie de la Valeur : Un champ de texte permet à l’utilisateur d’entrer la valeur à convertir.
-
-Action de Conversion : Un bouton permet de lancer le calcul et d’afficher le résultat.
-
-Affichage Dynamique du Résultat : Le résultat de la conversion s’affiche clairement à l’écran après chaque action.
-
-Interface Personnalisée : L’application utilise une présentation simple avec des couleurs distinctes pour chaque section et une navigation claire.
+* Navigation entre les Sections : Deux onglets permettent de basculer entre la conversion de température et la conversion de distance.
+* Convertisseur de Température : Une interface permet de convertir des valeurs entre Celsius et Fahrenheit.
+* Convertisseur de Distance : Une interface permet de convertir des valeurs entre kilomètres et miles.
+* Choix du Sens de Conversion : Des boutons radio permettent de sélectionner le type de conversion souhaité.
+* Saisie de la Valeur : Un champ de texte permet à l’utilisateur d’entrer la valeur à convertir.
+* Action de Conversion : Un bouton permet de lancer le calcul et d’afficher le résultat.
+* Affichage Dynamique du Résultat : Le résultat de la conversion s’affiche clairement à l’écran après chaque action.
+* Interface Personnalisée : L’application utilise une présentation simple avec des couleurs distinctes pour chaque section et une navigation claire.
 
 ## Technologies Utilisées
 - Java
